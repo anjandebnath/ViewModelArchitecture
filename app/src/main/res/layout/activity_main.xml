@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lotd.com.viewmodelarchitecture.ViewModelActivity">
+
+
+    <Button
+        android:id="@+id/progressButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="show progress"
+        android:layout_alignTop="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp" />
+
+    <Button
+        android:id="@+id/counterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Count"
+        android:layout_below="@+id/progressButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/click_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="count"
+        android:textSize="60dp"
+        android:layout_below="@+id/counterBtn"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
